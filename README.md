@@ -17,8 +17,25 @@
 ```xml
 <dependency>
     <groupId>jakarta.platform</groupId>
-    <artifactId>jakarta.jakartaee-web-api</artifactId>
-    <version>8.0.0</version>
+    <artifactId>jakarta.jakartaee-api</artifactId>
+    <version>10.0.0</version>
     <scope>provided</scope>
 </dependency>
+```
+
+```xml
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+  </servlet-mapping>
+</web-app>
 ```
