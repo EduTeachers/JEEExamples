@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>GDP per capita for countries</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'GDP per capita for countries',
+    height: 700,
+    width: 900,
+
+
+};
+
+var trace0 =
+{
+x: ["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo, Democratic Republic of","Congo, Republic of","Costa Rica","Côte d'Ivoire","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia, Federated States of","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tomé and Príncipe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"],
+y: [798.5851, 4267.9299, 5349.3798, 42340.1403, 6062.8902, 13627.6725, 11179.6014, 3297.5409, 66442.3775, 46380.3594, 7251.902, 22884.4737, 24593.1583, 812.4517, 15905.2632, 6682.0534, 43166.1422, 4443.4532, 756.6028, 2484.3477, 2696.1519, 4567.7022, 7116.3868, 11115.2648, 43122.1736, 7034.8154, 616.9327, 239.5903, 924.5188, 1279.9459, 44739.2259, 3868.8691, 463.7927, 770.7971, 15096.7197, 6121.7106, 7759.0743, 828.1818, 0.0, 0.0, 9664.8965, 1442.6188, 13155.9321, 6359.3564, 26294.6974, 18678.1904, 55886.5065, 1536.1174, 6999.2846, 6235.7065, 5546.7155, 2936.1321, 3738.0952, 8934.0321, 475.5202, 17005.3784, 473.0368, 4660.6327, 45325.628, 39620.3836, 14071.3033, 0.0, 3525.2199, 42444.5711, 1505.4121, 22380.6742, 7577.8105, 3187.0713, 562.813, 486.2543, 3632.3376, 690.181, 2169.9408, 12612.6126, 41609.9773, 1504.7931, 3482.0205, 7112.4923, 4148.6421, 45859.6591, 29420.5446, 33124.4426, 5443.3587, 46897.3169, 4685.8694, 11752.2617, 893.5362, 1653.1876, 59761.2408, 1120.9074, 1382.8106, 14214.3752, 8556.182, 1164.4423, 339.0948, 15320.9659, 156926.6401, 14403.8081, 100314.7171, 0.0, 468.7867, 335.9083, 10097.9554, 8213.5653, 650.8118, 21090.9615, 3530.2928, 1117.005, 9104.0623, 9887.4224, 3226.4112, 2038.734, 154451.9621, 3503.9061, 6525.5012, 2881.9935, 616.2261, 972.5785, 6060.8298, 12166.918, 680.4808, 47488.3583, 37733.8868, 1730.8388, 395.1873, 1604.7211, 575.8181, 97507.739, 19430.597, 1144.1176, 10190.9, 10644.4482, 2118.943, 3823.3186, 6716.3259, 2506.7282, 12724.7506, 20246.5212, 88499.9552, 8494.1604, 13902.8219, 674.0866, 13909.0909, 7322.2222, 6366.9725, 3625.8119, 56776.0517, 3712.6893, 23706.193, 1084.545, 5359.7401, 11336.5221, 7005.4989, 51214.9948, 16866.6655, 21995.4817, 1737.3534, 120.8588, 7253.6534, 22402.0111, 856.9725, 28365.8981, 2930.3768, 1379.8289, 9382.447, 3044.9527, 54134.9964, 77342.3274, 2116.7053, 0.0, 935.4167, 628.7487, 5983.7689, 4444.3271, 560.1316, 4512.9858, 17488.4546, 4145.685, 10282.0003, 6306.0109, 3532.6327, 614.758, 4099.3267, 40630.849, 38555.0739, 51032.2945, 15189.9666, 1686.1029, 2841.4673, 0.0, 13211.5894, 1736.9514, 1301.0105, 1430.4433, 750.4648],
+orientation: 'v',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

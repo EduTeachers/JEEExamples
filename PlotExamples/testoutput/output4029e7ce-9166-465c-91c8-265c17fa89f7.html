@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>GDP per countries in europe</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'GDP per countries in europe',
+    height: 700,
+    width: 900,
+
+
+};
+
+var trace0 =
+{
+x: ["Albania","Andorra","Austria","Belarus","Belgium","Bosnia and Herzegovina","Bulgaria","Croatia","Czech Republic","Denmark","Estonia","Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Italy","Kazakhstan","Latvia","Liechtenstein","Lithuania","Luxembourg","Macedonia","Malta","Moldova","Monaco","Montenegro","Netherlands","Norway","Poland","Portugal","Romania","San Marino","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland","Ukraine","United Kingdom","Vatican City"],
+y: [1.2044E10, 3.222E9, 3.94458E11, 6.3259E10, 4.83402E11, 1.7319E10, 5.0972E10, 5.6447E10, 1.96446E11, 3.14889E11, 2.2376E10, 2.47389E11, 2.611221E12, 3.425956E12, 2.48941E11, 1.246E11, 1.3579E10, 2.10638E11, 2.013392E12, 2.02656E11, 2.8379E10, 5.827E9, 4.2339E10, 5.5143E10, 0.0, 8.775E9, 7.253E9, 5.707E9, 4.046E9, 8.00535E11, 4.99667E11, 4.89852E11, 2.12139E11, 1.69396E11, 1.853E9, 3.8491E10, 9.1349E10, 4.538E10, 1.322126E12, 5.23804E11, 6.31183E11, 1.76309E11, 2.4716E12, 0.0],
+orientation: 'v',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
