@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JPAExample" />
+        <module name="JPAWildflyExample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JPAExample" target="17" />
+      <module name="JPAWildflyExample" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

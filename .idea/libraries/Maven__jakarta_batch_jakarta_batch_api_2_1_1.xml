@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jakarta.batch:jakarta.batch-api:2.1.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/batch/jakarta.batch-api/2.1.1/jakarta.batch-api-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/batch/jakarta.batch-api/2.1.1/jakarta.batch-api-2.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/batch/jakarta.batch-api/2.1.1/jakarta.batch-api-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

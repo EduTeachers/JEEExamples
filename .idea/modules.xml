@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JEEExamples.iml" filepath="$PROJECT_DIR$/.idea/JEEExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/JPAExample.iml" filepath="$PROJECT_DIR$/JPAExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPAWildflyExample.iml" filepath="$PROJECT_DIR$/JPAWildflyExample.iml" />
     </modules>
   </component>
 </project>
