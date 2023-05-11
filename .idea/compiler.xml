@@ -8,9 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JPAExample" />
         <module name="JPAWildflyExample" />
+        <module name="jpa-sample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jpa-sample" target="17" />
       <module name="JPAExample" target="17" />
       <module name="JPAWildflyExample" target="1.7" />
     </bytecodeTargetLevel>
